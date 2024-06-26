@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://cgptai.netlify.app/" target="_blank">
+    <a href="https://hoobankcashflow.netlify.app/" target="_blank">
       <img src="https://i.ibb.co/SKHgzVL/background-Hoobank.png" alt="Live Demo">
     </a>
   <br />
