@@ -15,7 +15,7 @@ export default function Hero(){
                     <img src= {discount} alt='discount' 
                     className='w-[32px] h-[32px]'/>
                     <p className={`${styles.paragraph} ml-2 uppercase`}>
-                        <span className='text-white'>20%</span> Discount For {" "}
+                        <span className='text-white'>30%</span> Discount For {" "}
                         <span className='text-white'>1 Month </span> Account
                     </p>
                 </div>
