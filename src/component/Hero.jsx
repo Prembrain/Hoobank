@@ -7,7 +7,7 @@ import { discount, robot } from '../assets'
 
 export default function Hero(){
     return(
-        <section id='home' className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+        <section id='home' className={`flex md:flex-row flex-col ${styles.paddingY}`}> {/*defind id to connect href from navbar */}
             <div className={`flex-1 ${styles.flexStart} 
             flex-col xl:px-0 sm:px-16 px-6`}>
                 <div className='flex flex-row items-center py-[6px] px-4
@@ -29,8 +29,8 @@ export default function Hero(){
                         className='text-gradient'>Generation
                         </span> {" "}
                     </h1>
-                    <div className='ss:flex hidden md:mr-4 mr-0'> 
-                        <GetStarted />
+                    <div className='ss:flex hidden md:mr-4 mr-0'> {/*desktop more than 620px*/}
+                        <GetStarted />  
                     </div>
                 </div>
 
@@ -46,20 +46,17 @@ export default function Hero(){
                 </p>
             </div>
     
-            <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-                <img src={robot} alt="robots" 
-                className='w-[100%] h-[100%] relative z-[5]'
+            <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}> {/*bg-gradient*/}
+                <img 
+                    src={robot} alt="robots" 
+                    className='w-[100%] h-[100%] relative z-[5]'
                 />
-
-                <div className='absolute z-[0] w-[40%] h-[35%] top-0 
-                pink__gradient'/>
-                <div className='absolute z-[1] w-[80%] h-[85%] top-0 
-                rounded-full bottom-40 white__gradient'/>
-                <div className='absolute z-[0] w-[50%] h-[50%] 
-                right-20 bottom-20 blue__gradient'/>
+                <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'/>
+                <div className='absolute z-[1] w-[80%] h-[85%] top-0 rounded-full bottom-40 white__gradient'/>
+                <div className='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient'/>
             </div>
 
-            <div className={`ss:hidden ${styles.flexCenter}`}> 
+            <div className={`ss:hidden ${styles.flexCenter}`}>  {/*moblie less than 620px*/}
                 <GetStarted />
             </div>
         </section>
